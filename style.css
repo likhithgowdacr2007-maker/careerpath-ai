@@ -1,0 +1,19 @@
+/* CareerPath AI - style.css
+   All colours, layout and component styles for the website. */
+:root{--bg:#fff;--card:#f6f7ff;--tx:#1b1f3b;--mu:#5b6082;--b:#2563eb;--p:#7c3aed;--ln:#e3e5f6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#12142a;--card:#1c1f3d;--tx:#eef0ff;--mu:#a9aed3;--ln:#2d3160}}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 'Plus Jakarta Sans',system-ui,sans-serif}
+a{color:var(--b)}nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--ln);display:flex;gap:4px;padding:8px 12px;overflow-x:auto;z-index:5;align-items:center}
+nav b{background:linear-gradient(90deg,var(--b),var(--p));-webkit-background-clip:text;background-clip:text;color:transparent;font-size:19px;margin-right:10px;white-space:nowrap}
+nav a{padding:6px 12px;border-radius:99px;text-decoration:none;color:var(--mu);font-weight:600;font-size:14px;white-space:nowrap}nav a.on{background:var(--b);color:#fff}
+main{max-width:1050px;margin:auto;padding:24px 16px 60px}h1{font-size:clamp(30px,6vw,52px);line-height:1.1;margin:.2em 0;font-weight:800}h2{margin:.2em 0 .5em}
+.g{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}.card{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:16px}
+.btn{display:inline-block;border:0;border-radius:10px;padding:10px 18px;font:600 15px inherit;font-family:inherit;color:#fff;background:linear-gradient(90deg,var(--b),var(--p));cursor:pointer;text-decoration:none;margin:4px 6px 4px 0}.btn.s{background:none;color:var(--b);border:1.5px solid var(--b)}.btn.sm{padding:5px 12px;font-size:13px}
+.tag{display:inline-block;background:#7c3aed22;color:var(--p);border-radius:99px;padding:2px 10px;font-size:12px;font-weight:600;margin:2px 3px 2px 0}.tag.ok{background:#16a34a22;color:#16a34a}.tag.demo{background:#f59e0b2a;color:#b45309}
+.bar{height:10px;background:var(--ln);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--b),var(--p))}
+.hero{padding:30px 0}.hero p{max-width:60ch;color:var(--mu);font-size:18px}.jr{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:20px 0}.jr a{background:var(--card);border:1px solid var(--ln);padding:10px 16px;border-radius:12px;text-decoration:none;font-weight:700;color:var(--tx)}
+input,select{font:inherit;padding:8px 10px;border:1px solid var(--ln);border-radius:8px;background:var(--bg);color:var(--tx);margin:4px 6px 4px 0;max-width:100%}
+label.ck{display:inline-flex;gap:6px;align-items:center;margin:3px 10px 3px 0}.row{display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--ln)}
+table{border-collapse:collapse;width:100%;min-width:520px}td,th{border:1px solid var(--ln);padding:8px;text-align:left;vertical-align:top;font-size:14px}.sc{overflow-x:auto}.note{font-size:13px;color:var(--mu)}
+:focus-visible{outline:3px solid var(--p);outline-offset:2px}
